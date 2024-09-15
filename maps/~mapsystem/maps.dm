@@ -126,7 +126,7 @@ var/global/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 	var/list/station_departments = list()//Gets filled automatically depending on jobs allowed
 
 	var/default_species = SPECIES_HUMAN
-
+/*
 	var/list/available_background_info = list(
 		/decl/background_category/homeworld = list(/decl/background_detail/location/other),
 		/decl/background_category/faction =   list(/decl/background_detail/faction/other),
@@ -140,7 +140,7 @@ var/global/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 		/decl/background_category/heritage =   /decl/background_detail/heritage/other,
 		/decl/background_category/religion =  /decl/background_detail/religion/other
 	)
-
+*/
 	var/access_modify_region = list(
 		ACCESS_REGION_SECURITY = list(access_hos, access_change_ids),
 		ACCESS_REGION_MEDBAY = list(access_cmo, access_change_ids),
@@ -191,7 +191,7 @@ var/global/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 				_background_categories[cat_type] = GET_DECL(cat_type)
 		background_categories_generated = TRUE
 	return _background_categories
-
+/*
 /datum/map/proc/get_random_location()
 	var/list/options = list()
 	for(var/cat_type in available_background_info)
@@ -201,7 +201,7 @@ var/global/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 	if(length(options))
 		return GET_DECL(pick(options))
 	return GET_DECL(/decl/background_detail/location/other)
-
+*/
 /datum/map/proc/get_lobby_track(var/exclude)
 	var/lobby_track_type
 	if(LAZYLEN(lobby_tracks) == 1)

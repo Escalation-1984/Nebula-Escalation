@@ -367,16 +367,9 @@ var/global/const/DEFAULT_SPECIES_HEALTH = 200
 				available_background_info[cat_type] = list()
 			available_background_info[cat_type] |= additional_available_background_info[cat_type]
 
-		else if(!LAZYLEN(available_background_info[cat_type]))
-			var/list/map_systems = global.using_map.available_background_info[cat_type]
-			available_background_info[cat_type] = map_systems.Copy()
-
 		if(LAZYLEN(available_background_info[cat_type]) && !default_background_info[cat_type])
 			var/list/avail_systems = available_background_info[cat_type]
 			default_background_info[cat_type] = avail_systems[1]
-
-		if(!default_background_info[cat_type])
-			default_background_info[cat_type] = global.using_map.default_background_info[cat_type]
 
 	if(species_hud)
 		species_hud = new species_hud

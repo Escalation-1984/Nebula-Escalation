@@ -4,7 +4,7 @@
 /datum/event/trivial_news/announce()
 	var/author = "Editor Mike Hammers"
 	var/channel = "The Gibson Gazette"
-	var/decl/background_detail/location/affected_dest = global.using_map.get_random_location()
+	var/decl/background_detail/location/affected_dest = "Narnia"
 	if(!istype(affected_dest))
 		return
 	var/body = pick(

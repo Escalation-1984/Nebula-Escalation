@@ -908,13 +908,13 @@
 
 /mob/living/proc/get_background_datum(cat_type)
 	return null
-
+/*
 /mob/living/human/get_background_datum(cat_type)
 	. = LAZYACCESS(background_info, cat_type)
 	if(!istype(., /decl/background_detail))
 		. = global.using_map.default_background_info[cat_type]
 		PRINT_STACK_TRACE("get_background_datum() tried to return a non-instance value for background category '[cat_type]' - full background list: [json_encode(background_info)] default species culture list: [json_encode(global.using_map.default_background_info)]")
-
+*/
 /mob/living/human/get_digestion_product()
 	return species.get_digestion_product(src)
 

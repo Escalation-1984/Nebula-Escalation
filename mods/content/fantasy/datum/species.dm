@@ -10,7 +10,7 @@
 	)
 	preview_outfit = /decl/outfit/job/generic/fantasy
 	base_external_prosthetics_model = /decl/bodytype/prosthetic/wooden
-
+/*
 	available_background_info = list(
 		/decl/background_category/homeworld = list(
 			/decl/background_detail/location/fantasy,
@@ -40,3 +40,4 @@
 			/decl/background_detail/religion/other
 		)
 	)
+*/

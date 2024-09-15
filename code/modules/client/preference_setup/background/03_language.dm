@@ -127,10 +127,8 @@
 /datum/category_item/player_setup_item/background/languages/proc/get_language_text()
 
 	sanitize_alt_languages()
-
-	var/colspan
+/*
 	if(LAZYLEN(pref.alternate_languages))
-		colspan = " colspan = 2"
 		for(var/i = 1 to length(pref.alternate_languages))
 			LAZYADD(., "<tr>")
 			var/lang = pref.alternate_languages[i]
@@ -141,16 +139,16 @@
 				LAZYADD(., "<td width = '200px'><b>[lang_instance.name] <a href='byond://?src=\ref[src];remove_language=[i]'>Remove</a></b></td>")
 			LAZYADD(., "<td>[lang_instance.desc || "No information avaliable."]</td>")
 			LAZYADD(., "</tr>")
-
+*/
 	var/max_languages = get_config_value(/decl/config/num/max_alternate_languages)
 	if(pref.alternate_languages.len < max_languages)
 
-		var/remaining_langs = max_languages - pref.alternate_languages.len
+		//var/remaining_langs = max_languages - pref.alternate_languages.len
 		var/list/available_languages = list()
 		for(var/lang in (allowed_languages - free_languages))
 			if(!(lang in pref.alternate_languages))
 				available_languages |= GET_DECL(lang)
-
+/*
 		LAZYADD(., "<tr>")
 		if(length(available_languages))
 			colspan = " colspan = 2"
@@ -164,11 +162,11 @@
 					language_link += "<br>"
 				language_links += language_link
 			LAZYADD(., "<td width = '200px'><b>Add language ([remaining_langs] remaining)</b></td>")
-			LAZYADD(., "<td>[jointext(language_links, null)]</td>")
+			(., "<td>[jointext(language_links, null)]</td>")
 		else
 			LAZYADD(., "<td[colspan]>There are no additional languages available to select.</td>")
 		LAZYADD(., "</tr>")
 
 	if(!LAZYLEN(.))
 		LAZYADD(., "<tr><td[colspan]>Your current species or background does not allow you to choose additional languages.</td></tr>")
-
+*/

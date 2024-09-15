@@ -1,3 +1,4 @@
+/*
 /datum/event/location_event
 	endWhen = 10
 
@@ -23,3 +24,4 @@
 
 /datum/event/location_event/mundane_news/get_possible_events(var/decl/background_detail/location/affected_dest)
 	. = affected_dest.viable_random_events
+*/

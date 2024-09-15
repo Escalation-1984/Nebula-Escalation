@@ -50,8 +50,6 @@
 			var/current_value = pref.background_info[cat_type]
 			if(!current_value || !_backgrounds[current_value])
 				pref.background_info[cat_type] = _backgrounds[1]
-		else
-			pref.background_info[cat_type] = global.using_map.default_background_info[cat_type]
 
 	// We handle name sanitizing here because otherwise we would not be able to retrieve the background data.
 	// This is a bit noodly. If pref.background_info has no entry for naming, then we haven't finished loading/sanitizing, which means we might purge
