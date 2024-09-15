@@ -34,7 +34,7 @@
 
 	// Must come after borers for compatibility.
 	#include "../../mods/content/psionics/_psionics.dme"
-
+/*
 	#include "../../mods/species/ascent/_ascent.dme"
 	#include "../../mods/species/drakes/_drakes.dme"
 	#include "../../mods/species/serpentid/_serpentid.dme"
@@ -56,7 +56,7 @@
 	#include "../away/unishi/unishi.dm"
 	#include "../away/yacht/yacht.dm"
 	#include "../away/liberia/liberia.dm"
-
+*/
 	#include "tradeship_antagonists.dm"
 	#include "tradeship_areas.dm"
 	#include "tradeship_departments.dm"

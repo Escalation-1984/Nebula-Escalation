@@ -24,7 +24,7 @@ Twice...
 	#include "../../mods/gamemodes/mixed/_mixed.dme"
 
 	#include "../random_ruins/exoplanet_ruins/playablecolony/playablecolony.dm"
-
+/*
 	#include "../../mods/content/xenobiology/_xenobiology.dme"
 	#include "../../mods/content/corporate/_corporate.dme"
 	#include "../../mods/content/matchmaking/_matchmaking.dme"
@@ -39,7 +39,7 @@ Twice...
 	#include "../../mods/content/modern_earth/_modern_earth.dme"
 	#include "../../mods/content/mouse_highlights/_mouse_highlight.dme"
 	#include "../../mods/content/scaling_descriptors.dm"
-
+*/
 	#include "ministation_antagonists.dm"
 	#include "ministation_areas.dm"
 	#include "ministation_departments.dm"
@@ -55,7 +55,7 @@ Twice...
 	#include "ministation-2.dmm"
 	#include "ministation-3.dmm"
 	#include "space.dmm"
-
+/*
 	#include "../away/bearcat/bearcat.dm"
 	#include "../away/casino/casino.dm"
 	#include "../away/derelict/derelict.dm"
@@ -72,7 +72,7 @@ Twice...
 
 	#include "../../mods/mobs/dionaea/_dionaea.dme"
 	#include "../../mods/mobs/borers/_borers.dme"
-
+*/
 	// Must come after borers for compatibility.
 	#include "../../mods/content/psionics/_psionics.dme"
 

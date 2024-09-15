@@ -9,7 +9,7 @@
 	#include "../../mods/gamemodes/traitor/_traitor.dme"
 	#include "../../mods/gamemodes/spyvspy/_spyvspy.dme"
 	#include "../../mods/gamemodes/mixed/_mixed.dme"
-
+/*
 	#include "../../mods/content/mundane.dm"
 	#include "../../mods/content/bigpharma/_bigpharma.dme"
 	#include "../../mods/content/corporate/_corporate.dme"
@@ -22,7 +22,7 @@
 
 	#include "../../mods/mobs/dionaea/_dionaea.dme"
 	#include "../../mods/mobs/borers/_borers.dme"
-
+*/
 	// Must come after borers for compatibility.
 	#include "../../mods/content/psionics/_psionics.dme"
 

@@ -9,7 +9,7 @@
 
 /decl/starting_cash_choice/proc/get_cash_objects(var/mob/living/human/owner, var/datum/money_account/owner_account)
 	return
-
+/*
 /decl/starting_cash_choice/credstick
 	name = "all on charge stick"
 	uid = "starting_cash_stick"
@@ -26,7 +26,7 @@
 	name = "split between bank account and charge stick"
 	transfer_mult = 0.5
 	uid = "starting_cash_account_stick_split"
-
+*/
 /decl/starting_cash_choice/cash
 	name = "all in cash"
 	uid = "starting_cash_cash"
@@ -43,6 +43,11 @@
 	transfer_mult = 0.5
 	uid = "starting_cash_cash_account_split"
 
+/decl/starting_cash_choice/bank
+	name = "all in bank"
+	transfer_mult = 0.5
+	uid = "starting_cash_account"
+/*
 /decl/starting_cash_choice/split
 	name = "split between cash and charge stick"
 	transfer_mult = 0.5
@@ -66,3 +71,4 @@
 	name = "split between bank account, cash and charge stick"
 	transfer_mult = 0.33
 	uid = "starting_cash_cash_account_stick_split"
+*/
